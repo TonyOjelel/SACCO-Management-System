@@ -40,7 +40,7 @@
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="mr-3">
-                            <div class="text-white-75">Payments Today</div>
+                            <div class="text-white-75">Member Savings today</div>
                             <div class="text-lg font-weight-bold">
                                 <?php 
                                 $payments = $conn->query("SELECT sum(amount) as total FROM payments where date(date_created) = '".date("Y-m-d")."'");
@@ -51,7 +51,7 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex align-items-center justify-content-between">
-                    <a class="text-white stretched-link" href="index.php?page=payments">View Payments</a>
+                    <a class="text-white stretched-link" href="index.php?page=payments">View Members List</a>
                     <div class="text-white"></div>
                 </div>
             </div>
@@ -106,7 +106,7 @@
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="mr-3">
-                            <div class="text-white-75">Total Receivable</div>
+                            <div class="text-white-75">Total Member Savings</div>
                             <div class="text-lg font-weight-bold">
                                 <?php 
                                 $payments = $conn->query("SELECT sum(amount - penalty_amount) as total FROM payments where date(date_created) = '".date("Y-m-d")."'");
@@ -120,7 +120,7 @@
                     </div>
                 </div>
                 <div class="card-footer d-flex align-items-center justify-content-between">
-                    <a class="text-white stretched-link" href="index.php?page=loans">View Loan List</a>
+                    <a class="text-white stretched-link" href="index.php?page=loans">View Savers List</a>
                     <div class="text-white"></div>
                 </div>
             </div>
@@ -130,7 +130,7 @@
     <div class="row ml-2 mr-2">
         <div class="card-body">
             <div class="mt-5 mb-3">
-                <h2 class="display-6">Payment List</h2>
+                <h2 class="display-6">Member Savings List</h2>
             </div>
             <table class="table table-bordered" id="loan-list">
                 <colgroup>
@@ -144,10 +144,10 @@
                 <thead class="blue-header">
                     <tr>
                         <th class="text-center">#</th>
-                        <th class="text-center">Loan Reference No</th>
-                        <th class="text-center">Payee</th>
+                        <th class="text-center">Account Number</th>
+                        <th class="text-center">Member</th>
                         <th class="text-center">Amount</th>
-                        <th class="text-center">Penalty</th>
+                        <th class="text-center">Interest on Savings</th>
                         <th class="text-center">Action</th>
                     </tr>
                 </thead>

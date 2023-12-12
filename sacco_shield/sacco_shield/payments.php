@@ -34,8 +34,8 @@
 		<div class="card">
 			<div class="card-header">
 				<large class="card-title">
-					<b>Payment List</b>
-					<button class="btn btn-primary  col-md-2 float-right" type="button" id="new_payments"><i class="fa fa-plus"></i> New Payment</button>
+					<b>Member Savings List</b>
+					<button class="btn btn-primary  col-md-2 float-right" type="button" id="new_payments"><i class="fa fa-plus"></i> New deposit</button>
 				</large>
 				
 			</div>
@@ -52,10 +52,10 @@
 					<thead class="blue-header">
 						<tr>
 							<th class="text-center">#</th>
-							<th class="text-center">Loan Reference No</th>
-							<th class="text-center">Payee</th>
+							<th class="text-center">Account Number</th>
+							<th class="text-center">Name</th>
 							<th class="text-center">Amount</th>
-							<th class="text-center">Penalty</th>
+							<th class="text-center">Interest on Savings</th>
 							<th class="text-center">Action</th>
 						</tr>
 					</thead>

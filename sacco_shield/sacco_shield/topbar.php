@@ -41,7 +41,7 @@
             <img src="assets/img/1.png" alt="Logo" style="max-height: 100%; max-width: 180px; height: auto; width: auto;">
         </a>
         <div class="navbar-text ml-auto">
-            <a href="https://github.com/TonyOjelel" target="_blank" class="text-dark" style="text-decoration: none;">
+            <a href="#" target="_blank" class="text-dark" style="text-decoration: none;">
                 <strong>SACCO & MICROFINANCE</strong>
             </a>
         </div>
